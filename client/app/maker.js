@@ -1,7 +1,9 @@
 const handleDomo = (e) => {
     e.preventDefault();
 
-    if($("#domoMessage").val() == '' || $("#domoAge").val() == '') {
+    $("#domoMessage").animate({width:'hide'}, 350);
+
+    if($("#domoName").val() == '' || $("#domoAge").val() == '') {
         handleError("All fields are required");
         return false;
     }
