@@ -76,7 +76,6 @@ app.set('views', `${__dirname}/../views`);
 app.disable('x-powered-by');
 app.use(cookieParser());
 
-
 // csrf
 app.use(csrf());
 app.use((err, req, res, next) => {
